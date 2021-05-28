@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!-- this tells html 5 is being used-->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8"> <!-- meta tags help browser to understand how to display the website, like description. utf-8 tells unicode-->
+  <title>Ayush's personal site</title> <!-- that appears on browser tab-->
+  <link rel="stylesheet" href="css/styles.css">        <!--linking external css to html-->
+  <!--
+  <style>
+    body {
+      background-color : #f8eded;
+    }
+    hr {
+      border-color : grey;
+      border-style : none;
+      border-top-style : dotted;
+      border-width : 5px;
+      width : 10%;
+    }
+  </style>
+  -->             <!-- when same property of an element is affected, the priority is given to inline css, then internal css and last to external css-->
+          <!--commented out the internal css, since external css is being used. external helps to apply styles to all pages of site-->
+</head>      <!-- this is internal CSS, can be done in html head itself-->
+<!-- this whole thing is called boilerplate, from doctype to html closing tag, it's like a template (comes up when you type html and enter)-->
+                    <!--inline CSS can be used by adding attribute style in the tag you want to style-->
+<body>       <!-- image and test above the first hr is made into table here-->
+  <table cellspacing="30">     <!--attributes are req only when opening the tag-->
+    <tr>
+      <td><img src="images/ayush.png" width="200" height="200" alt="Ayush Pandey pfp"></td>
+      <td><h1 class="topheading">Ayush Pandey</h1>
+      <p>
+        <em>Ayush Pandey is a <strong>petrolhead</strong>.</em>
+        <!--emphasis is used in place of i(italics) for better structuring, same case with strong-->
+      </p>
+      <p>
+        Ayush loves ICE cars and isn't happy with electrification.
+      </p></td>
+    </tr>
+  </table>     <!--nesting can be come with tables, like to make two columns of a single table, but it's complex and code readibility is reduced-->
+  <hr>
+  <h3>Fav SUVs</h3>
+  <ul>
+    <li><a href="https://www.dodge.com/">Dodge Durango Hellcat</a></li>
+    <li>Audi RSQ8</li>
+    <li>Lamborghini Urus</li>
+  </ul>
+  <hr>
+  <h3>Fav supercars</h3>
+  <ol>
+    <li><a href="https://www.porsche.com/">Porsche 911 Turbo S</a></li>
+    <li>Lamborghini Aventador SVJ</li>
+    <li>McLaren 765LT</li>
+  </ol>
+  <hr>
+  <h3>Best Budget Cars (India)</h3>
+  <table cellspacing="15">           <!-- there are no columns in table-->
+    <thead>          <!-- use thead tag so that when styling later, it is easy. like for eg when scrolling in site, it stays there-->
+      <tr>
+        <th>Name</th>        <!--th cell for head items because they are bold by default-->
+        <th>Type</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tata Harrier</td>
+        <td>Mid-size SUV</td>
+        <td>14-23L</td>
+      </tr>
+      <tr>
+        <td>Mahindra Thar</td>
+        <td>Compact SUV</td>
+        <td>12-17L</td>
+      </tr>
+      <tr>
+        <td>Honda City</td>
+        <td>Mid-size Sedan</td>
+        <td>11-17L</td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+  <hr>
+  <h3 id="EVsectionheading">Rating best in the business EVs</h3>
+  <table cellspacing="15">
+    <tr>
+      <td>Porsche Taycan CT Turbo</td>
+      <td>⭐️⭐️⭐️⭐️⭐️</td>
+    </tr>
+    <tr>
+      <td>Tesla Model S</td>
+      <td>⭐️⭐️⭐️⭐️⭐️</td>
+    </tr>
+    <tr>
+      <td>Audi RS ETron GT</td>
+      <td>⭐️⭐️⭐️⭐️</td>
+    </tr>
+    <tr>
+      <td>Mercedes EQS</td>
+      <td>⭐️⭐️⭐️⭐️</td>
+    </tr>
+  </table>
+  <hr>
+  <h4><a href="contact.html">contact</a></h4>
+</body>
+
+</html>

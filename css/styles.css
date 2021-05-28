@@ -1,0 +1,33 @@
+body {
+  background-color : #f8eded;
+}
+
+/*the element before curly brackets is called selector, to which styling is done*/
+hr {
+  border-color : grey;
+  border-style : none;
+  border-top-style : dotted;
+  border-width : 5px;
+  width : 10%;
+}
+
+h1 {
+  color : #66BFBF;
+}
+
+h3 {
+  color : #66BFBF;
+}
+
+/*comments in css are like c++, also below is using a class as a aelector. used for an individual, it overrides*/
+/*classes can be more than one inside a tag and same class can be used inside different tags to give them same style*/
+.topheading {
+  color : red;
+}
+
+/*below is id selector, it is different from class*/
+/*a particular id can be used only once, and there can be only 1 id in a tag*/
+/*ids are more specific*/
+#EVsectionheading {
+  color : blue;
+}
